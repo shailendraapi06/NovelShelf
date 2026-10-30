@@ -1,0 +1,133 @@
+[
+  {
+    "_id": "log_11acae0f-e7e",
+    "actorId": "usr_dd3058a6-c56",
+    "actorName": "Archivist Prime",
+    "actorEmail": "admin@novelshelf.com",
+    "actorRole": "admin",
+    "action": "CONTRIBUTION_APPROVED",
+    "entityType": "contribution",
+    "entityId": "contrib_b838a163-728",
+    "entityTitle": "Labyrinths of Time",
+    "details": {
+      "publishedBookId": "bk_ab0bdfa2-849",
+      "contributor": "Elena Rostova"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-29T16:20:26.117Z"
+  },
+  {
+    "_id": "log_859a0436-b47",
+    "actorId": "usr_dd3058a6-c56",
+    "actorName": "Archivist Prime",
+    "actorEmail": "admin@novelshelf.com",
+    "actorRole": "admin",
+    "action": "USER_LOGIN",
+    "entityType": "auth",
+    "entityId": "usr_dd3058a6-c56",
+    "entityTitle": "Archivist Prime",
+    "details": {
+      "role": "admin"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-29T16:20:26.099Z"
+  },
+  {
+    "_id": "log_eee22b63-8bc",
+    "actorId": "usr_71d91670-f7d",
+    "actorName": "Elena Rostova",
+    "actorEmail": "patron@novelshelf.com",
+    "actorRole": "user",
+    "action": "CONTRIBUTION_SUBMITTED",
+    "entityType": "contribution",
+    "entityId": "contrib_b838a163-728",
+    "entityTitle": "Labyrinths of Time",
+    "details": {
+      "author": "Jorge Luis Borges",
+      "pdfName": "Labyrinths_of_Time.pdf",
+      "fileSizeMb": "0.00"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-29T16:20:25.959Z"
+  },
+  {
+    "_id": "log_f2940015-48e",
+    "actorId": "usr_71d91670-f7d",
+    "actorName": "Elena Rostova",
+    "actorEmail": "patron@novelshelf.com",
+    "actorRole": "user",
+    "action": "USER_LOGIN",
+    "entityType": "auth",
+    "entityId": "usr_71d91670-f7d",
+    "entityTitle": "Elena Rostova",
+    "details": {
+      "role": "user"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-29T16:20:25.922Z"
+  },
+  {
+    "_id": "log_d386bc03-955",
+    "actorId": "usr_dd3058a6-c56",
+    "actorName": "Archivist Prime",
+    "actorEmail": "admin@novelshelf.com",
+    "actorRole": "admin",
+    "action": "USER_LOGIN",
+    "entityType": "auth",
+    "entityId": "usr_dd3058a6-c56",
+    "entityTitle": "Archivist Prime",
+    "details": {
+      "role": "admin"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-29T16:20:10.637Z"
+  },
+  {
+    "_id": "log_bf7bf335-9ad",
+    "actorId": "usr_71d91670-f7d",
+    "actorName": "Elena Rostova",
+    "actorEmail": "patron@novelshelf.com",
+    "actorRole": "user",
+    "action": "USER_LOGIN",
+    "entityType": "auth",
+    "entityId": "usr_71d91670-f7d",
+    "entityTitle": "Elena Rostova",
+    "details": {
+      "role": "user"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-29T16:20:10.489Z"
+  },
+  {
+    "_id": "log_cbeaa291-676",
+    "actorId": "usr_dd3058a6-c56",
+    "actorName": "Archivist Prime",
+    "actorEmail": "admin@novelshelf.com",
+    "actorRole": "admin",
+    "action": "USER_LOGIN",
+    "entityType": "auth",
+    "entityId": "usr_dd3058a6-c56",
+    "entityTitle": "Archivist Prime",
+    "details": {
+      "role": "admin"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-29T16:05:31.329Z"
+  },
+  {
+    "_id": "log_695b7c5e-53b",
+    "actorId": "usr_dd3058a6-c56",
+    "actorName": "Archivist Prime",
+    "actorEmail": "admin@novelshelf.com",
+    "actorRole": "admin",
+    "action": "SYSTEM_BOOTSTRAP",
+    "entityType": "system",
+    "entityId": "sys-0",
+    "entityTitle": "NovelShelf Digital Archive",
+    "details": {
+      "version": "2.0.0",
+      "environment": "production"
+    },
+    "createdAt": "2026-10-29T16:04:21.333Z"
+  }
+]

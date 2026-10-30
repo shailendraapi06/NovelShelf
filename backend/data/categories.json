@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "cat_c43841f4-3",
+    "name": "Fiction",
+    "slug": "fiction",
+    "icon": "auto_stories",
+    "description": "Literary narratives, magical realism & timeless prose.",
+    "active": true,
+    "order": 1,
+    "createdAt": "2026-10-29T16:04:21.299Z"
+  },
+  {
+    "_id": "cat_109ad046-2",
+    "name": "Mystery & Detective",
+    "slug": "mystery",
+    "icon": "search_insights",
+    "description": "Gothic enigmas, whodunits & psychological tension.",
+    "active": true,
+    "order": 2,
+    "createdAt": "2026-10-29T16:04:21.301Z"
+  },
+  {
+    "_id": "cat_bcf3851e-d",
+    "name": "Fantasy",
+    "slug": "fantasy",
+    "icon": "castle",
+    "description": "Mythic realms, epics & deep folkloric worldbuilding.",
+    "active": true,
+    "order": 3,
+    "createdAt": "2026-10-29T16:04:21.304Z"
+  },
+  {
+    "_id": "cat_04ae3538-5",
+    "name": "Sci-Fi & Speculative",
+    "slug": "scifi",
+    "icon": "rocket_launch",
+    "description": "Speculative futures, cyberpunk & deep cosmos.",
+    "active": true,
+    "order": 4,
+    "createdAt": "2026-10-29T16:04:21.306Z"
+  },
+  {
+    "_id": "cat_f7d1c604-3",
+    "name": "Personal Growth",
+    "slug": "growth",
+    "icon": "psychology",
+    "description": "Habits, focus, human psychology & mental mastery.",
+    "active": true,
+    "order": 5,
+    "createdAt": "2026-10-29T16:04:21.307Z"
+  },
+  {
+    "_id": "cat_9039552f-3",
+    "name": "Philosophy",
+    "slug": "philosophy",
+    "icon": "account_balance",
+    "description": "Stoicism, existentialism & inquiries into reality.",
+    "active": true,
+    "order": 6,
+    "createdAt": "2026-10-29T16:04:21.309Z"
+  },
+  {
+    "_id": "cat_0bf81ce8-6",
+    "name": "Poetry",
+    "slug": "poetry",
+    "icon": "ink_pen",
+    "description": "Classical meters, modern stanza & evocative verse.",
+    "active": true,
+    "order": 7,
+    "createdAt": "2026-10-29T16:04:21.311Z"
+  },
+  {
+    "_id": "cat_76567f30-4",
+    "name": "Biography",
+    "slug": "biography",
+    "icon": "history_edu",
+    "description": "Historical lives, private letters & documented journeys.",
+    "active": true,
+    "order": 8,
+    "createdAt": "2026-10-29T16:04:21.313Z"
+  }
+]

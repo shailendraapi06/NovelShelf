@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "usr_dd3058a6-c56",
+    "name": "Archivist Prime",
+    "email": "admin@novelshelf.com",
+    "password": "$2a$10$XhL5sJL0S3gJB.uh.2rYCOcspmWQvHYfyDXI0PLHH9QXSewwQvtR6",
+    "role": "admin",
+    "status": "active",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256",
+    "bio": "Head Curator & Master Archivist of NovelShelf Sanctuary",
+    "readingStats": {
+      "booksRead": 0,
+      "pagesRead": 0,
+      "currentStreakDays": 1
+    },
+    "createdAt": "2026-10-29T16:04:21.179Z",
+    "updatedAt": "2026-10-29T16:04:21.180Z"
+  },
+  {
+    "_id": "usr_71d91670-f7d",
+    "name": "Elena Rostova",
+    "email": "patron@novelshelf.com",
+    "password": "$2a$10$fM0paoA8O4GkCz2xms3rpuZWT9eG//uGLeMI/dSgzHxazOyEYXn3S",
+    "role": "user",
+    "status": "active",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256",
+    "bio": "Lifelong reader of magical realism and early European manuscripts",
+    "readingStats": {
+      "booksRead": 0,
+      "pagesRead": 0,
+      "currentStreakDays": 1
+    },
+    "createdAt": "2026-10-29T16:04:21.296Z",
+    "updatedAt": "2026-10-29T16:04:21.296Z"
+  }
+]

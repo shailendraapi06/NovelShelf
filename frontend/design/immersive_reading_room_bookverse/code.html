@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-container":"#173f35","secondary-container":"#fcd89c","error-container":"#ffdad6","tertiary-container":"#2d3c2d","surface-variant":"#e0e3dd","on-primary":"#ffffff","inverse-surface":"#2d312d","surface-container-low":"#f2f5ee","background":"#f7faf4","on-tertiary-fixed-variant":"#3c4b3b","on-tertiary-fixed":"#111f12","primary":"#002920","surface-container-lowest":"#ffffff","primary-fixed":"#c1ecdd","on-primary-fixed-variant":"#274e43","tertiary-fixed":"#d6e7d2","surface-dim":"#d8dbd5","on-secondary-fixed":"#271900","tertiary":"#182619","on-error":"#ffffff","primary-fixed-dim":"#a6cfc1","surface-container":"#ecefe8","surface":"#f7faf4","surface-container-high":"#e6e9e3","on-surface-variant":"#414845","on-error-container":"#93000a","secondary":"#755a2a","secondary-fixed-dim":"#e5c188","on-primary-fixed":"#002019","secondary-fixed":"#ffdea9","outline":"#717975","on-background":"#191d19","on-tertiary":"#ffffff","on-surface":"#191d19","inverse-primary":"#a6cfc1","tertiary-fixed-dim":"#bacbb7","surface-tint":"#3f665a","on-secondary":"#ffffff","inverse-on-surface":"#eff2eb","on-secondary-fixed-variant":"#5b4315","outline-variant":"#c0c8c4","on-secondary-container":"#775d2d","on-tertiary-container":"#96a693","error":"#ba1a1a","on-primary-container":"#82aa9d","surface-bright":"#f7faf4","surface-container-highest":"#e0e3dd"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"3rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-xl":"2.5rem",gutter:"1.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","space-lg":"1.5rem","space-2xl":"4rem","space-md":"1rem"},fontFamily:{"headline-md":["Playfair Display"],"title-editorial":["Playfair Display"],"label-archival":["Manrope"],"label-md":["Manrope"],"body-lg":["Manrope"],"headline-sm":["Playfair Display"],"display-hero-mobile":["Playfair Display"],"headline-lg":["Playfair Display"],"display-hero":["Playfair Display"],"body-sm":["Manrope"],"label-lg":["Manrope"],"body-md":["Manrope"],"headline-lg-mobile":["Playfair Display"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",fontWeight:"500"}],"title-editorial":["18px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"600"}],"label-archival":["10px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"500"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(23,63,55,0.06)]"><div class="h-20 max-w-[1320px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6 shrink-0"><a class="flex items-center gap-3 group" data-path="home" href="#"><img alt="BookVerse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XSG8w1QlhIUBtGm-XjL-3wwSnRShu5-y4H1Obl4qB0Ie4R2DNAiuGGCLWepWTxsGcRrQXxeQmjG4cgpMmCNVjkfrtzmI2n-Ktx-RKQZE4tpdEEYn1mIwChldm_pCVOv8zqgiGjlik4wyjDYPNTWaEQFH5N4vY1ysfLjLWycmoqgI4nWmTntpRr-5QDIO2oBDd2YBGKUITcuzEjk6E184CpBexmm0nA5eXUwbcB6Ks"/><div class="flex flex-col"><span class="font-title-editorial text-title-editorial text-primary tracking-tight group-hover:text-secondary transition-colors">BookVerse</span><span class="font-label-archival text-label-archival text-secondary tracking-widest uppercase -mt-1">Literary Exchange</span></div></a><div class="hidden xl:block h-6 w-px bg-outline-variant/60"></div><div class="relative hidden lg:flex items-center w-64 xl:w-72"><span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">search</span><input class="w-full pl-9 pr-4 py-1.5 bg-surface-container-high rounded text-on-surface placeholder:text-outline text-body-sm font-body-sm focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Search titles, authors, bindings..." type="text"/></div></div><nav class="hidden md:flex items-center gap-1 xl:gap-2" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded"><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="home" href="#">Home</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="explore-library" href="#">Explore</a><a aria-current="page" class="px-3 py-2 transition-colors bg-primary-container text-on-primary font-label-lg rounded" data-path="immersive-reading-room" href="#">Reading Room</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="physical-book-exchange" href="#">Book Exchange</a><a class="px-3 py-2 text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="contribute" href="#">Contribute</a></nav><div class="flex items-center gap-3 sm:gap-4 shrink-0"><button aria-label="Notifications" class="relative p-2 text-on-surface-variant hover:text-on-surface rounded-full transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-secondary rounded-full ring-2 ring-surface"></span></button><a class="hidden sm:inline-flex items-center gap-2 px-4 py-2 bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg rounded transition-colors shadow-[0_2px_8px_rgba(23,63,55,0.2)]" data-path="my-library-dashboard" href="#"><span class="material-symbols-outlined text-sm">auto_stories</span><span>My Library</span></a><div class="h-7 w-px bg-outline-variant/60 hidden sm:block"></div><a class="flex items-center gap-2 rounded-full focus:outline-none focus:ring-2 focus:ring-secondary" data-path="my-library-dashboard" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp08OgYNgPYSHRfe4XIgZYM-VeeI8dr83nCgVAI1dvpYyK0Yu_J3k2KMAfjD0toyHoywkmTzXVd8R5Uh4zqVwrafPBSUpHorEiTtvYaRH_YBn7hRvuhI3tcKD0fRZD9qJyhn8_bSFtBhzaxvMoTc1L9NLXBNO1c0IgS0sha5CpirnhczhD3s30M9XH6-FrUX6G1AgEtlcCnOZPFTPPgwnJiYTjILjPjUhoRvJWLxU"/></a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full relative select-none">
+<!-- Top Ambient Desk Surface Aura -->
+<div class="fixed inset-0 pointer-events-none -z-10 bg-gradient-to-b from-surface-container-high via-surface to-surface-container-low opacity-80"></div>
+<!-- Minimalist Top Reading Toolbar -->
+<header class="w-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm z-30 transition-all duration-300">
+<div class="max-w-[1320px] mx-auto px-6 py-3 flex items-center justify-between gap-4">
+<!-- Left: Back Navigation -->
+<a class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group" data-path="explore-library" href="#">
+<span class="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span class="font-label-lg text-label-lg">Back to Book Details</span>
+</a>
+<!-- Center: Volume & Progress Context -->
+<div class="hidden md:flex flex-col items-center text-center">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">The Shadow of the Wind</span>
+<span class="text-outline text-xs">•</span>
+<span class="font-label-md text-label-md text-secondary">Carlos Ruiz Zafón</span>
+</div>
+<div class="flex items-center gap-3 mt-0.5">
+<span class="font-label-archival text-label-archival text-on-surface-variant uppercase tracking-widest">Chapter IV: The Cemetery of Forgotten Books</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant text-[11px] font-label-md">Page 42 of 512 • 8%</span>
+</div>
+</div>
+<!-- Right: Action Controls -->
+<div class="flex items-center gap-2 sm:gap-3">
+<!-- Bookmark Button -->
+<button class="p-2 sm:px-3 sm:py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all flex items-center gap-1.5" id="bookmarkBtn" onclick="toggleBookmark()" title="Bookmark Page 42">
+<span class="material-symbols-outlined text-lg" id="bookmarkIcon">bookmark</span>
+<span class="hidden sm:inline font-label-md text-label-md" id="bookmarkLabel">Bookmark</span>
+</button>
+<!-- Ambient Sound Toggle Trigger -->
+<button class="p-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-secondary transition-all flex items-center" id="soundQuickBtn" onclick="toggleAmbientSound()" title="Toggle Library Rain Audio">
+<span class="material-symbols-outlined text-lg" id="soundQuickIcon">water_drop</span>
+</button>
+<!-- Reading Appearance Trigger -->
+<button class="p-2 sm:px-3 sm:py-1.5 rounded bg-primary text-on-primary hover:bg-primary-container transition-all flex items-center gap-1.5 shadow-sm" id="settingsBtn" onclick="toggleSettingsDrawer()" title="Customise Typography &amp; Display">
+<span class="material-symbols-outlined text-lg">tune</span>
+<span class="hidden sm:inline font-label-lg text-label-lg">Appearance</span>
+</button>
+<!-- Fullscreen Trigger -->
+<button class="p-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-all flex items-center" onclick="toggleFullscreen()" title="Toggle Fullscreen Focus">
+<span class="material-symbols-outlined text-lg" id="fsIcon">fullscreen</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Bookmark Toast Notification -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-5 py-2.5 rounded-xl shadow-xl z-50 transition-all duration-300 opacity-0 pointer-events-none translate-y-3 flex items-center gap-3" id="toastBox">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Ribbon bookmark placed on Page 42.</span>
+</div>
+<!-- Main Sanctuary Reading Room Viewport -->
+<div class="w-full py-8 md:py-12 px-4 sm:px-6 lg:px-12 flex flex-col items-center justify-center transition-colors duration-500" id="readingSanctuary">
+<!-- Realistic Two-Page Open Book Stage -->
+<div class="relative w-full max-w-[1180px] mx-auto flex items-center justify-center">
+<!-- Left Page Flip Hotzone & Floating Button -->
+<button aria-label="Previous Page" class="group absolute -left-3 lg:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-xl flex flex-col items-center justify-center text-primary hover:bg-primary hover:text-on-primary hover:scale-105 active:scale-95 transition-all" onclick="prevPage()">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-x-0.5 transition-transform">arrow_back_ios_new</span>
+<span class="text-[9px] font-label-archival text-outline group-hover:text-primary-fixed uppercase tracking-wider hidden sm:block">Prev [←]</span>
+</button>
+<!-- The Physical Book Spread Container -->
+<div class="w-full relative rounded-xl shadow-[0_20px_60px_-15px_rgba(23,63,55,0.22),0_8px_24px_-6px_rgba(0,0,0,0.12)] bg-[#F8F5EF] text-[#202622] transition-all duration-300 overflow-hidden flex flex-col md:flex-row min-h-[640px] md:min-h-[720px]" id="bookSpread">
+<!-- Authentic Book Base Decorative Bevel (Faux Stacked Page Depth) -->
+<div class="absolute -bottom-2.5 left-4 right-4 h-2.5 bg-surface-dim rounded-b-lg -z-10 shadow-inner opacity-90"></div>
+<div class="absolute -bottom-1.5 left-2 right-2 h-1.5 bg-[#EEE7DA] rounded-b-lg -z-10 shadow-inner"></div>
+<!-- LEFT PAGE -->
+<article class="flex-1 px-8 sm:px-12 md:px-16 py-12 md:py-16 flex flex-col justify-between relative bg-gradient-to-r from-[#F8F5EF] via-[#F8F5EF] to-[#EDE6D8]">
+<!-- Left Header: Author & Folio -->
+<div class="flex items-center justify-between pb-6 opacity-60">
+<span class="font-label-archival text-label-archival uppercase tracking-widest text-on-surface-variant">Carlos Ruiz Zafón</span>
+<span class="font-label-md text-label-md font-semibold">42</span>
+</div>
+<!-- Left Body Content with Drop Cap -->
+<div class="space-y-5 text-justify leading-relaxed transition-all" id="leftContent">
+<p class="font-body-lg text-body-lg">
+<span class="float-left text-5xl md:text-6xl font-headline-lg font-bold leading-none pr-3 pt-1 text-primary drop-cap font-title-editorial">I</span>
+              still remember the day my father took me to the Cemetery of Forgotten Books for the very first time. It was the early summer of 1945, and we walked through the misty streets of a Barcelona trapped beneath skies of pewter and cold ash, breathing in the scent of damp masonry and yesterday’s rain.
+            </p>
+<p class="font-body-md text-body-md text-on-surface">
+              "Daniel," my father whispered as we halted before an ancient carved portal on Calle del Arco del Teatro, "what you are going to see today must remain between us. Not even your friend Tomás may know of this place."
+            </p>
+<p class="font-body-md text-body-md text-on-surface">
+              A man with the gaunt features of an ascetic welcomed us in silence. We descended a grand spiral staircase that coiled into the subterranean belly of the city. Down in that labyrinth of vaulted arches and stone colonnades lay a sprawling necropolis of literature: millions of abandoned volumes, towers of leather-bound folios spiraling toward the high gloom.
+            </p>
+<p class="font-body-md text-body-md text-on-surface">
+              "Every volume, every book you see here has a soul," my father explained, touching the spine of an aged folio embossed in gilt. "The soul of the person who wrote it and of those who read it and lived and dreamed with it."
+            </p>
+</div>
+<!-- Left Footer Marginalia -->
+<div class="pt-8 flex items-center justify-between opacity-40">
+<span class="font-label-archival text-[10px] tracking-widest uppercase">The Shadow of the Wind • Part I</span>
+<div class="w-8 h-px bg-outline"></div>
+</div>
+</article>
+<!-- CENTER BINDING GUTTER / SHADOW CREASE -->
+<div class="hidden md:block w-10 relative shrink-0 -my-4 z-10 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-r from-black/15 via-black/25 to-black/15 shadow-inner"></div>
+<div class="absolute left-1/2 top-0 bottom-0 w-px bg-black/30 -translate-x-1/2"></div>
+<!-- Silk Ribbon Placeholder Spine Highlight -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-20 bg-secondary/80 rounded-b shadow-sm"></div>
+</div>
+<!-- RIGHT PAGE -->
+<article class="flex-1 px-8 sm:px-12 md:px-16 py-12 md:py-16 flex flex-col justify-between relative bg-gradient-to-r from-[#EDE6D8] via-[#F8F5EF] to-[#F8F5EF]">
+<!-- Dog-ear Ribbon / Interactive Corner -->
+<div class="group absolute top-0 right-0 w-12 h-12 cursor-pointer z-10" id="dogEarCorner" onclick="toggleDogEar()" title="Fold / Unfold page corner">
+<div class="w-0 h-0 border-t-[36px] border-t-secondary/30 border-l-[36px] border-l-transparent group-hover:border-t-secondary transition-all"></div>
+<span class="material-symbols-outlined text-[12px] text-surface absolute top-1 right-1 opacity-80 pointer-events-none">bookmark</span>
+</div>
+<!-- Right Header: Chapter Folio -->
+<div class="flex items-center justify-between pb-6 opacity-60">
+<span class="font-label-archival text-label-archival uppercase tracking-widest text-on-surface-variant">IV. The Cemetery of Forgotten Books</span>
+<span class="font-label-md text-label-md font-semibold">43</span>
+</div>
+<!-- Right Body Continuation -->
+<div class="space-y-5 text-justify leading-relaxed transition-all" id="rightContent">
+<p class="font-body-md text-body-md text-on-surface">
+              "According to tradition," continued my father, resting a firm, warm hand upon my shoulder, "the first time someone visits this sanctuary, he must choose one book—any book he pleases—and adopt it, ensuring that it will never perish, that it will always remain alive."
+            </p>
+<p class="font-body-md text-body-md text-on-surface">
+              For almost half an hour I roamed the shadowy galleries, breathing the venerable aroma of old wood and forgotten paper. I brushed my fingers against brittle vellum, cloth bindings stamped with forgotten coats of arms, and gold-leaf emblems flaking like dead skin.
+            </p>
+<p class="font-body-md text-body-md text-on-surface">
+              And then, among hundreds of forgotten titles, it found me. It was tucked away in a corner of an arched alcove, bound in wine-colored morocco leather, its gold lettering dimmed by decades of cellar dust: <em>La Sombra del Viento</em>, by Julián Carax.
+            </p>
+<p class="font-body-md text-body-md text-on-surface">
+              I pulled it carefully from the shelf. A faint shudder coursed through my fingertips, as though the volume were alive, its slumber stirred by the pulse of an unsuspecting ten-year-old child.
+            </p>
+</div>
+<!-- Right Footer Marginalia / Footnote -->
+<div class="pt-8 flex items-center justify-between opacity-50">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-archival text-[10px] uppercase tracking-wider">Edición Archival Colección</span>
+</div>
+<span class="font-label-archival text-[10px] tracking-widest uppercase">Libro I • 1945</span>
+</div>
+</article>
+</div>
+<!-- Right Page Flip Hotzone & Floating Button -->
+<button aria-label="Next Page" class="group absolute -right-3 lg:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-xl flex flex-col items-center justify-center text-primary hover:bg-primary hover:text-on-primary hover:scale-105 active:scale-95 transition-all" onclick="nextPage()">
+<span class="material-symbols-outlined text-2xl group-hover:translate-x-0.5 transition-transform">arrow_forward_ios</span>
+<span class="text-[9px] font-label-archival text-outline group-hover:text-primary-fixed uppercase tracking-wider hidden sm:block">Next [→]</span>
+</button>
+</div>
+<!-- Reading Progress Track Section -->
+<div class="w-full max-w-[1180px] mt-8 bg-surface-container-lowest rounded-xl p-4 sm:p-5 shadow-sm">
+<div class="flex items-center justify-between gap-4 mb-2">
+<div class="flex items-center gap-3">
+<span class="font-label-md text-label-md text-primary font-bold">Chapter IV</span>
+<span class="text-xs text-outline">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pages 42–43 of 512</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-archival text-label-archival text-secondary font-bold">8.4% READ</span>
+<span class="text-xs text-outline">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant">~18 mins remaining in chapter</span>
+</div>
+</div>
+<!-- Scrubbable Progress Bar with Chapter Milestone Dots -->
+<div class="relative w-full h-3 bg-surface-container-high rounded-full overflow-hidden cursor-pointer" id="scrubRail" onclick="scrubTimeline(event)" title="Click to navigate through timeline">
+<div class="absolute left-0 top-0 bottom-0 bg-primary rounded-full transition-all duration-200" style="width: 8.4%;"></div>
+<!-- Chapter Milestone Ticks -->
+<div class="absolute top-0 bottom-0 left-[4%] w-0.5 bg-surface-container-lowest opacity-80" title="Ch. 2"></div>
+<div class="absolute top-0 bottom-0 left-[8%] w-1 bg-secondary rounded-full" title="Ch. 4 (Current)"></div>
+<div class="absolute top-0 bottom-0 left-[15%] w-0.5 bg-surface-container-lowest opacity-80" title="Ch. 6"></div>
+<div class="absolute top-0 bottom-0 left-[26%] w-0.5 bg-surface-container-lowest opacity-80" title="Ch. 10"></div>
+<div class="absolute top-0 bottom-0 left-[50%] w-0.5 bg-surface-container-lowest opacity-80" title="Ch. 14"></div>
+<div class="absolute top-0 bottom-0 left-[75%] w-0.5 bg-surface-container-lowest opacity-80" title="Ch. 20"></div>
+</div>
+</div>
+</div>
+<!-- Bottom Reading Navigation Tray -->
+<footer class="w-full bg-surface-container-lowest shadow-[0_-2px_12px_rgba(23,63,55,0.06)] py-3 px-6 sm:px-12 z-20">
+<div class="max-w-[1320px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Prev & Next Jump Buttons -->
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-2" onclick="prevPage()">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+<span class="font-label-lg text-label-lg">Previous Spread</span>
+</button>
+<button class="px-4 py-2 rounded bg-primary text-on-primary hover:bg-primary-container transition-colors flex items-center gap-2" onclick="nextPage()">
+<span class="font-label-lg text-label-lg">Next Spread</span>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+<!-- Chapter Jump Dropdown -->
+<div class="flex items-center gap-3 w-full md:w-auto justify-center">
+<span class="material-symbols-outlined text-outline text-lg hidden sm:inline">menu_book</span>
+<label class="font-label-md text-label-md text-on-surface-variant sr-only" for="chapterSelect">Select Chapter</label>
+<select class="bg-surface-container-high text-on-surface rounded px-3 py-2 font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-primary w-full sm:w-72" id="chapterSelect" onchange="jumpChapter(this.value)">
+<option value="1">Chapter I: The Boy Who Walked in Fog</option>
+<option value="2">Chapter II: Calle del Arco del Teatro</option>
+<option value="3">Chapter III: The Key to the Vaults</option>
+<option selected="" value="4">Chapter IV: The Cemetery of Forgotten Books</option>
+<option value="5">Chapter V: The Stranger in the Rain</option>
+<option value="6">Chapter VI: The Footsteps of Julián Carax</option>
+<option value="7">Chapter VII: Clotilde and the Shadows</option>
+<option value="8">Chapter VIII: The Burnt Manuscript</option>
+<option value="9">Chapter IX: Don Anacleto’s Warning</option>
+<option value="10">Chapter X: The Clockwork Angel</option>
+</select>
+</div>
+<!-- Ambient Library Sound Controller Bar -->
+<div class="flex items-center gap-3 bg-surface-container-low px-3 py-1.5 rounded-full">
+<button class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:scale-105 transition-transform" id="soundIconBtn" onclick="toggleAmbientSound()">
+<span class="material-symbols-outlined text-lg" id="soundMainIcon">volume_up</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-archival text-[10px] text-on-surface-variant uppercase tracking-wider">Atmosphere</span>
+<span class="font-label-md text-label-md text-primary font-medium" id="soundNameLabel">Rain &amp; Oak Fireplace</span>
+</div>
+<input class="w-20 sm:w-24 accent-primary h-1.5 bg-surface-container-highest rounded-lg cursor-pointer" max="100" min="0" oninput="updateSoundVolume(this.value)" title="Adjust Ambient Sound Volume" type="range" value="45"/>
+<span class="font-label-archival text-[11px] text-outline font-semibold" id="volDisplay">45%</span>
+</div>
+</div>
+</footer>
+<!-- Floating Reading Settings Drawer Modal -->
+<div class="fixed right-0 top-20 bottom-0 w-80 sm:w-96 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_24px_48px_-8px_rgba(32,38,34,0.18)] z-50 transform translate-x-full transition-transform duration-300 overflow-y-auto p-6 flex flex-col justify-between" id="settingsDrawer">
+<div>
+<div class="flex items-center justify-between pb-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">auto_stories</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Reading Options</h3>
+</div>
+<button class="p-1 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="toggleSettingsDrawer()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- 1. Color Themes -->
+<div class="space-y-3 pb-6">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Atmospheric Theme</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="theme-btn active p-3 rounded-lg flex flex-col items-center gap-2 bg-[#F8F5EF] text-[#191D19] shadow-sm hover:scale-102 transition-all" onclick="applyTheme('parchment')">
+<span class="w-5 h-5 rounded-full bg-[#EDE6D8] shadow-inner"></span>
+<span class="font-label-md text-label-md">Parchment</span>
+</button>
+<button class="theme-btn p-3 rounded-lg flex flex-col items-center gap-2 bg-[#F4ECD8] text-[#4A3B22] shadow-sm hover:scale-102 transition-all" onclick="applyTheme('sepia')">
+<span class="w-5 h-5 rounded-full bg-[#E5D7BA] shadow-inner"></span>
+<span class="font-label-md text-label-md">Candlelight</span>
+</button>
+<button class="theme-btn p-3 rounded-lg flex flex-col items-center gap-2 bg-[#173F35] text-[#F7FAF4] shadow-sm hover:scale-102 transition-all" onclick="applyTheme('forest')">
+<span class="w-5 h-5 rounded-full bg-[#002920] shadow-inner"></span>
+<span class="font-label-md text-label-md">Midnight</span>
+</button>
+</div>
+</div>
+<!-- 2. Typography Selection -->
+<div class="space-y-3 pb-6">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Typeface Style</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="font-btn active p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-title-editorial text-title-editorial text-center transition-colors" onclick="applyFont('font-title-editorial')">
+            Playfair
+          </button>
+<button class="font-btn p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-body-lg text-sm text-center transition-colors" onclick="applyFont('font-body-lg')">
+            Garamond
+          </button>
+<button class="font-btn p-2.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-sm text-center transition-colors" onclick="applyFont('font-label-lg')">
+            Modern
+          </button>
+</div>
+</div>
+<!-- 3. Font Size Controls -->
+<div class="space-y-3 pb-6">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Scale Size</label>
+<span class="font-label-md text-label-md text-secondary" id="fontSizeLabel">Standard (15px)</span>
+</div>
+<div class="flex items-center justify-between gap-2 bg-surface-container rounded-lg p-1.5">
+<button class="size-btn flex-1 py-1 rounded text-center font-label-md text-label-md hover:bg-surface-container-lowest transition-colors" onclick="changeFontSize('sm')">A-</button>
+<button class="size-btn flex-1 py-1 rounded bg-surface-container-lowest text-center font-label-md text-label-md font-bold transition-colors" onclick="changeFontSize('md')">Def</button>
+<button class="size-btn flex-1 py-1 rounded text-center font-label-md text-label-md hover:bg-surface-container-lowest transition-colors" onclick="changeFontSize('lg')">A+</button>
+<button class="size-btn flex-1 py-1 rounded text-center font-label-md text-label-md hover:bg-surface-container-lowest transition-colors" onclick="changeFontSize('xl')">Edit</button>
+</div>
+</div>
+<!-- 4. Line Spacing -->
+<div class="space-y-3 pb-6">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Line Spacing</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="lead-btn p-2 rounded bg-surface-container hover:bg-surface-container-high text-center font-label-md text-label-md transition-colors" onclick="applyLeading('leading-snug')">Compact</button>
+<button class="lead-btn active p-2 rounded bg-primary text-on-primary text-center font-label-md text-label-md transition-colors" onclick="applyLeading('leading-relaxed')">Comfortable</button>
+<button class="lead-btn p-2 rounded bg-surface-container hover:bg-surface-container-high text-center font-label-md text-label-md transition-colors" onclick="applyLeading('leading-loose')">Expansive</button>
+</div>
+</div>
+<!-- 5. Spread Width -->
+<div class="space-y-3 pb-6">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Book Width</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="width-btn p-2 rounded bg-surface-container text-center font-label-md text-label-md transition-colors" onclick="applyWidth('max-w-[960px]')">Narrow</button>
+<button class="width-btn active p-2 rounded bg-primary text-on-primary text-center font-label-md text-label-md transition-colors" onclick="applyWidth('max-w-[1180px]')">Standard</button>
+<button class="width-btn p-2 rounded bg-surface-container text-center font-label-md text-label-md transition-colors" onclick="applyWidth('max-w-[1320px]')">Expansive</button>
+</div>
+</div>
+</div>
+<div class="pt-6">
+<button class="w-full py-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors text-center" onclick="resetSettings()">
+        Reset to Library Default
+      </button>
+</div>
+</div>
+<!-- Keyboard Shortcuts Bar Notification -->
+<div class="w-full text-center py-3 text-outline text-xs hidden lg:flex items-center justify-center gap-6 font-label-archival uppercase tracking-wider">
+<span>Tip: Press <kbd class="px-1.5 py-0.5 bg-surface-container-high rounded text-on-surface">←</kbd> and <kbd class="px-1.5 py-0.5 bg-surface-container-high rounded text-on-surface">→</kbd> to turn pages</span>
+<span>•</span>
+<span>Press <kbd class="px-1.5 py-0.5 bg-surface-container-high rounded text-on-surface">B</kbd> to Bookmark</span>
+<span>•</span>
+<span>Press <kbd class="px-1.5 py-0.5 bg-surface-container-high rounded text-on-surface">F</kbd> for Fullscreen</span>
+</div>
+</div>
+<script>
+  let isBookmarked = false;
+  let isPlayingSound = true;
+  let currentTheme = 'parchment';
+
+  function showToast(msg) {
+    const toast = document.getElementById('toastBox');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.textContent = msg;
+    toast.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
+    }, 2800);
+  }
+
+  function toggleBookmark() {
+    isBookmarked = !isBookmarked;
+    const btn = document.getElementById('bookmarkBtn');
+    const icon = document.getElementById('bookmarkIcon');
+    const label = document.getElementById('bookmarkLabel');
+
+    if (isBookmarked) {
+      btn.classList.add('bg-secondary', 'text-on-secondary');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      icon.textContent = 'bookmark_added';
+      label.textContent = 'Saved';
+      showToast('Page 42 marked with archival silk ribbon.');
+    } else {
+      btn.classList.remove('bg-secondary', 'text-on-secondary');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      icon.textContent = 'bookmark';
+      label.textContent = 'Bookmark';
+      showToast('Bookmark removed from Page 42.');
+    }
+  }
+
+  function toggleDogEar() {
+    const ear = document.getElementById('dogEarCorner');
+    ear.classList.toggle('opacity-30');
+    showToast('Corner fold toggled on page 43.');
+  }
+
+  function toggleSettingsDrawer() {
+    const drawer = document.getElementById('settingsDrawer');
+    drawer.classList.toggle('translate-x-full');
+  }
+
+  function toggleFullscreen() {
+    const fsIcon = document.getElementById('fsIcon');
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(() => {});
+      fsIcon.textContent = 'fullscreen_exit';
+      showToast('Entered Tranquil Fullscreen Reading.');
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+        fsIcon.textContent = 'fullscreen';
+        showToast('Exited Fullscreen.');
+      }
+    }
+  }
+
+  function toggleAmbientSound() {
+    isPlayingSound = !isPlayingSound;
+    const mainIcon = document.getElementById('soundMainIcon');
+    const quickIcon = document.getElementById('soundQuickIcon');
+    const soundName = document.getElementById('soundNameLabel');
+
+    if (isPlayingSound) {
+      mainIcon.textContent = 'volume_up';
+      quickIcon.textContent = 'water_drop';
+      soundName.textContent = 'Rain & Oak Fireplace';
+      showToast('Ambient Library Audio Resumed (45%).');
+    } else {
+      mainIcon.textContent = 'volume_off';
+      quickIcon.textContent = 'music_off';
+      soundName.textContent = 'Muted';
+      showToast('Ambient Audio Muted.');
+    }
+  }
+
+  function updateSoundVolume(val) {
+    document.getElementById('volDisplay').textContent = val + '%';
+    if (!isPlayingSound && val > 0) {
+      toggleAmbientSound();
+    }
+  }
+
+  function prevPage() {
+    showToast('Turning back to Pages 40–41...');
+  }
+
+  function nextPage() {
+    showToast('Turning ahead to Pages 44–45...');
+  }
+
+  function scrubTimeline(e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const percent = Math.round((clickX / rect.width) * 100);
+    const targetPage = Math.round((percent / 100) * 512);
+    showToast(`Navigated to page ${targetPage} of 512 (${percent}%)`);
+  }
+
+  function jumpChapter(val) {
+    showToast(`Jumped to Chapter ${val}`);
+  }
+
+  function applyTheme(theme) {
+    const spread = document.getElementById('bookSpread');
+    const sanctuary = document.getElementById('readingSanctuary');
+    currentTheme = theme;
+
+    spread.classList.remove('bg-[#F8F5EF]', 'bg-[#F4ECD8]', 'bg-[#173F35]', 'text-[#202622]', 'text-[#4A3B22]', 'text-[#F7FAF4]');
+
+    if (theme === 'parchment') {
+      spread.classList.add('bg-[#F8F5EF]', 'text-[#202622]');
+      sanctuary.classList.remove('bg-[#0D1815]');
+      showToast('Parchment reading theme applied.');
+    } else if (theme === 'sepia') {
+      spread.classList.add('bg-[#F4ECD8]', 'text-[#4A3B22]');
+      sanctuary.classList.remove('bg-[#0D1815]');
+      showToast('Sepia Candlelight theme applied.');
+    } else if (theme === 'forest') {
+      spread.classList.add('bg-[#173F35]', 'text-[#F7FAF4]');
+      sanctuary.classList.add('bg-[#0D1815]');
+      showToast('Midnight Forest theme applied.');
+    }
+  }
+
+  function applyFont(fontClass) {
+    const left = document.getElementById('leftContent');
+    const right = document.getElementById('rightContent');
+    left.className = left.className.replace(/font-\S+/g, '') + ' ' + fontClass;
+    right.className = right.className.replace(/font-\S+/g, '') + ' ' + fontClass;
+    showToast('Typeface updated.');
+  }
+
+  function changeFontSize(size) {
+    const left = document.getElementById('leftContent');
+    const right = document.getElementById('rightContent');
+    const label = document.getElementById('fontSizeLabel');
+
+    left.classList.remove('text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl');
+    right.classList.remove('text-xs', 'text-sm', 'text-base', 'text-lg', 'text-xl');
+
+    if (size === 'sm') {
+      left.classList.add('text-sm');
+      right.classList.add('text-sm');
+      label.textContent = 'Small (13px)';
+    } else if (size === 'md') {
+      left.classList.add('text-base');
+      right.classList.add('text-base');
+      label.textContent = 'Standard (15px)';
+    } else if (size === 'lg') {
+      left.classList.add('text-lg');
+      right.classList.add('text-lg');
+      label.textContent = 'Large (18px)';
+    } else if (size === 'xl') {
+      left.classList.add('text-xl');
+      right.classList.add('text-xl');
+      label.textContent = 'Editorial (20px)';
+    }
+    showToast('Font scale updated.');
+  }
+
+  function applyLeading(lead) {
+    const left = document.getElementById('leftContent');
+    const right = document.getElementById('rightContent');
+    left.classList.remove('leading-snug', 'leading-relaxed', 'leading-loose');
+    right.classList.remove('leading-snug', 'leading-relaxed', 'leading-loose');
+    left.classList.add(lead);
+    right.classList.add(lead);
+    showToast('Line height spacing adjusted.');
+  }
+
+  function applyWidth(widthClass) {
+    const spreadWrapper = document.getElementById('bookSpread').parentElement;
+    spreadWrapper.classList.remove('max-w-[960px]', 'max-w-[1180px]', 'max-w-[1320px]');
+    spreadWrapper.classList.add(widthClass);
+    showToast('Spread width updated.');
+  }
+
+  function resetSettings() {
+    applyTheme('parchment');
+    applyFont('font-body-lg');
+    changeFontSize('md');
+    applyLeading('leading-relaxed');
+    applyWidth('max-w-[1180px]');
+    showToast('Default library typography restored.');
+  }
+
+  // Keyboard shortcut listener
+  window.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+    if (e.key === 'ArrowLeft') prevPage();
+    if (e.key === 'ArrowRight') nextPage();
+    if (e.key.toLowerCase() === 'b') toggleBookmark();
+    if (e.key.toLowerCase() === 'f') toggleFullscreen();
+  });
+</script></main><footer class="w-full bg-primary-container text-on-primary-container mt-space-2xl"><div class="max-w-[1320px] mx-auto px-6 lg:px-12 py-16"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-primary-fixed-dim/20"><div class="lg:col-span-4 flex flex-col gap-4"><div class="flex items-center gap-3"><img alt="BookVerse Logo" class="h-8 w-auto object-contain brightness-200 contrast-125" src="https://lh3.googleusercontent.com/aida/AEtjO1XSG8w1QlhIUBtGm-XjL-3wwSnRShu5-y4H1Obl4qB0Ie4R2DNAiuGGCLWepWTxsGcRrQXxeQmjG4cgpMmCNVjkfrtzmI2n-Ktx-RKQZE4tpdEEYn1mIwChldm_pCVOv8zqgiGjlik4wyjDYPNTWaEQFH5N4vY1ysfLjLWycmoqgI4nWmTntpRr-5QDIO2oBDd2YBGKUITcuzEjk6E184CpBexmm0nA5eXUwbcB6Ks"/><span class="font-title-editorial text-headline-sm text-surface font-semibold tracking-tight">BookVerse</span></div><p class="font-body-md text-body-md text-on-primary-container/90 max-w-sm">A curated sanctuary uniting digital bibliophiles and custodians of physical print. Immersive deep reading, rare edition catalogs, and trusted ex-libris community swaps.</p><div class="flex items-center gap-3 pt-2"><a class="w-9 h-9 rounded flex items-center justify-center bg-surface/10 text-surface hover:bg-surface/20 transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a><a class="w-9 h-9 rounded flex items-center justify-center bg-surface/10 text-surface hover:bg-surface/20 transition-colors" href="#"><span class="material-symbols-outlined text-lg">import_contacts</span></a><a class="w-9 h-9 rounded flex items-center justify-center bg-surface/10 text-surface hover:bg-surface/20 transition-colors" href="#"><span class="material-symbols-outlined text-lg">forum</span></a></div></div><div class="lg:col-span-2 flex flex-col gap-3"><span class="font-title-editorial text-title-editorial text-surface">Collections</span><nav class="flex flex-col gap-2.5 font-body-sm text-body-sm"><a class="text-on-primary-container hover:text-surface transition-colors" data-path="explore-library" href="#">Explore Catalog</a><a class="text-on-primary-container hover:text-surface transition-colors" data-path="immersive-reading-room" href="#">Reading Room</a><a class="text-on-primary-container hover:text-surface transition-colors" data-path="physical-book-exchange" href="#">Book Exchange</a><a class="text-on-primary-container hover:text-surface transition-colors" href="#">Rare Editions</a></nav></div><div class="lg:col-span-2 flex flex-col gap-3"><span class="font-title-editorial text-title-editorial text-surface">Preservation</span><nav class="flex flex-col gap-2.5 font-body-sm text-body-sm"><a class="text-on-primary-container hover:text-surface transition-colors" href="#">Swap Guidelines</a><a class="text-on-primary-container hover:text-surface transition-colors" href="#">Condition Ratings</a><a class="text-on-primary-container hover:text-surface transition-colors" href="#">Ex-Libris Seal</a><a class="text-on-primary-container hover:text-surface transition-colors" href="#">Curator Terms</a></nav></div><div class="lg:col-span-4 flex flex-col gap-3"><span class="font-title-editorial text-title-editorial text-surface">The Literary Dispatch</span><p class="font-body-sm text-body-sm text-on-primary-container/90">Subscribe to weekly literary quarterly reflections, featured member exchanges, and archival volume releases.</p><form class="flex items-center gap-2 pt-1"><input class="w-full px-3.5 py-2 rounded bg-surface/10 border border-primary-fixed-dim/30 text-surface placeholder:text-on-primary-container/70 text-body-sm font-body-sm focus:outline-none focus:ring-1 focus:ring-secondary-fixed" placeholder="curator@library.org" type="email"/><button class="px-4 py-2 bg-secondary text-surface font-label-md text-label-md rounded hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shrink-0" type="button">Subscribe</button></form></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-primary-container/70"><p>© 2025 BookVerse Archival Society. All literary holdings and physical exchanges reserved.</p><div class="flex items-center gap-6"><a class="hover:text-surface transition-colors" href="#">Privacy Guild</a><a class="hover:text-surface transition-colors" href="#">Provenance Code</a><a class="hover:text-surface transition-colors" href="#">Catalog Index</a></div></div></div></footer></body></html>

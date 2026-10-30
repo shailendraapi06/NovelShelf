@@ -1,0 +1,63 @@
+[
+  {
+    "_id": "contrib_b838a163-728",
+    "id": "contrib_8cf8484f",
+    "contributor": "usr_71d91670-f7d",
+    "contributorName": "Elena Rostova",
+    "contributorEmail": "patron@novelshelf.com",
+    "title": "Labyrinths of Time",
+    "author": "Jorge Luis Borges",
+    "genre": "Philosophy",
+    "year": 2026,
+    "pages": 120,
+    "edition": "Digitized Folio Edition",
+    "license": "Public Domain / Creative Commons",
+    "rightsConfirmed": true,
+    "synopsis": "An exploration of timeless labyrinths and recursive philosophical puzzles.",
+    "pdfFile": {
+      "originalName": "Labyrinths_of_Time.pdf",
+      "filename": "quarantine_Labyrinths_of_Time_1793290825952-317751082.pdf",
+      "filePath": "C:\\Users\\dell\\Desktop\\dgtl_library\\backend\\uploads\\quarantine\\quarantine_Labyrinths_of_Time_1793290825952-317751082.pdf",
+      "fileSize": 41,
+      "mimeType": "application/pdf",
+      "isQuarantined": true
+    },
+    "status": "approved",
+    "reviewNotes": "Verified public domain edition. Accepted into canonical collection.",
+    "reviewer": "usr_dd3058a6-c56",
+    "reviewedAt": "2026-10-29T16:20:26.113Z",
+    "createdAt": "2026-10-29T16:20:25.957Z",
+    "updatedAt": "2026-10-29T16:20:26.115Z",
+    "publishedBookId": "bk_ab0bdfa2-849"
+  },
+  {
+    "_id": "contrib_d6912c30-d9f",
+    "id": "contrib_2bed55ba",
+    "contributor": "usr_71d91670-f7d",
+    "contributorName": "Elena Rostova",
+    "contributorEmail": "patron@novelshelf.com",
+    "title": "The Aleph and Other Stories",
+    "author": "Jorge Luis Borges",
+    "genre": "Fiction",
+    "year": 1949,
+    "pages": 210,
+    "edition": "Emecé Editores 1952 (High-Res Folio Scan)",
+    "license": "Public Domain (Universal Archival)",
+    "rightsConfirmed": true,
+    "synopsis": "A canonical Argentine masterwork exploring infinity, labyrinths, and literary enigmas through concise philosophical fables.",
+    "pdfFile": {
+      "originalName": "Borges_The_Aleph_1952_Archive.pdf",
+      "filename": "quarantine_Borges_The_Aleph_1952_demo.pdf",
+      "filePath": "uploads/quarantine/quarantine_Borges_The_Aleph_1952_demo.pdf",
+      "fileSize": 15518924.8,
+      "mimeType": "application/pdf",
+      "isQuarantined": true
+    },
+    "status": "under_review",
+    "reviewNotes": "",
+    "reviewer": null,
+    "reviewedAt": null,
+    "createdAt": "2026-10-29T16:04:21.330Z",
+    "updatedAt": "2026-10-29T16:04:21.330Z"
+  }
+]

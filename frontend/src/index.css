@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7faf4;
+    color: #191d19;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  body {
+    overscroll-behavior: none;
+  }
+  
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-none::-webkit-scrollbar,
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-none,
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Material Symbols icon utility */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1;
+}
+
+/* Editorial Drop Cap */
+.drop-cap {
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+/* Smooth book turns and transitions */
+.book-spine-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.book-spine-hover:hover {
+  transform: translateY(-1.25rem) scale(1.02);
+}
+
+/* Reading Room Typeface Options */
+.font-reader-playfair {
+  font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+.font-reader-garamond {
+  font-family: 'EB Garamond', Garamond, 'Times New Roman', serif !important;
+}
+
+.font-reader-modern {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Explicit Reader Spread Widths */
+.reader-width-narrow {
+  max-width: 960px !important;
+}
+
+.reader-width-standard {
+  max-width: 1180px !important;
+}
+
+.reader-width-expansive {
+  max-width: 1360px !important;
+}
