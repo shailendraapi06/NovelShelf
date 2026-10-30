@@ -1,6 +1,10 @@
 # NovelShelf — Full MERN Stack Digital Library & Archival Sanctuary
 
-A production-grade digital sanctuary featuring a curated book catalogue, tranquil online Reading Room, secure PDF manuscript quarantine workflow, user authentication, and a comprehensive master administrator dashboard.
+## 🌐 Live Demo
+
+Visit the live deployed application here: [NovelShelf Live](https://mynovelshelf.netlify.app/)
+
+A production-grade digital sanctuary featuring a curated book catalogue, tranquil online Reading Room, secure PDF manuscript quarantine workflow, user authentication, and a comprehensive master admini[...]
 
 ---
 
@@ -42,7 +46,7 @@ graph TD
 ### 1. Prerequisites
 - **Node.js** (v18+)
 - **NPM** (v9+)
-- *(Optional)* **MongoDB** (If local MongoDB or MongoDB Atlas URI is set in `backend/.env`, it connects automatically; if offline, an integrated persistent archival engine seamlessly stores data without crashing).
+- *(Optional)* **MongoDB** (If local MongoDB or MongoDB Atlas URI is set in `backend/.env`, it connects automatically; if offline, an integrated persistent archival engine seamlessly stores data witho[...] 
 
 ### 2. Running the Backend
 ```bash
@@ -83,7 +87,7 @@ Accessible only to users with the `admin` role:
 - **Dashboard Overview (`/admin`)**: Real-time metrics on published books, active patrons, pending review manuscripts, and recent platform events.
 - **Book Management (`/admin/books`)**: Full CRUD operations—catalog new books with PDF uploads and cover images, edit metadata, toggle visibility (`published` vs `draft`), and decommission volumes.
 - **Category Organization (`/admin/categories`)**: Create, edit, and organize shelf alcoves with live book counters and icons.
-- **Manuscript Review Queue (`/admin/contributions`)**: Inspect submitted PDFs, review patron metadata, and either **"Approve & Publish to Public Shelves"** (automatically moves file from quarantine to published catalog) or **"Reject"** with feedback notes.
+- **Manuscript Review Queue (`/admin/contributions`)**: Inspect submitted PDFs, review patron metadata, and either **"Approve & Publish to Public Shelves"** (automatically moves file from quarantine t[...]
 - **Patron & User Management (`/admin/users`)**: Search patrons, promote/demote between `user` and `admin`, and suspend or reactivate accounts.
 - **Audit & Activity Log (`/admin/logs`)**: Complete immutable ledger tracking all logins, registrations, contributions, reviews, publications, and administrative actions.
 
