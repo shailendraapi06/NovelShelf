@@ -32,5 +32,22 @@
     },
     "createdAt": "2026-10-29T16:04:21.296Z",
     "updatedAt": "2026-10-29T16:04:21.296Z"
+  },
+  {
+    "_id": "usr_55cea139-acf",
+    "name": "Shailendra Pratap siingh",
+    "email": "shailendra@gmail.com",
+    "password": "$2a$10$aDz26Vd7BA475KSwBprgk.RT8JEpjlm6nUQ6PD/fODQ/p4Z7BmuKe",
+    "role": "user",
+    "status": "active",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=256",
+    "bio": "Bibliophile & Patron of the Archival Arts",
+    "readingStats": {
+      "booksRead": 0,
+      "pagesRead": 0,
+      "currentStreakDays": 1
+    },
+    "createdAt": "2026-10-30T06:48:10.430Z",
+    "updatedAt": "2026-10-30T06:48:10.430Z"
   }
 ]

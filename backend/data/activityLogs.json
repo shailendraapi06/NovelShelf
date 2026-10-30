@@ -1,5 +1,37 @@
 [
   {
+    "_id": "log_57304366-571",
+    "actorId": "usr_55cea139-acf",
+    "actorName": "Shailendra Pratap siingh",
+    "actorEmail": "shailendra@gmail.com",
+    "actorRole": "user",
+    "action": "USER_LOGIN",
+    "entityType": "auth",
+    "entityId": "usr_55cea139-acf",
+    "entityTitle": "Shailendra Pratap siingh",
+    "details": {
+      "role": "user"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-30T07:11:27.295Z"
+  },
+  {
+    "_id": "log_f99ac6b8-611",
+    "actorId": "usr_55cea139-acf",
+    "actorName": "Shailendra Pratap siingh",
+    "actorEmail": "shailendra@gmail.com",
+    "actorRole": "user",
+    "action": "USER_REGISTER",
+    "entityType": "auth",
+    "entityId": "usr_55cea139-acf",
+    "entityTitle": "Shailendra Pratap siingh",
+    "details": {
+      "email": "shailendra@gmail.com"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-10-30T06:48:10.445Z"
+  },
+  {
     "_id": "log_11acae0f-e7e",
     "actorId": "usr_dd3058a6-c56",
     "actorName": "Archivist Prime",
