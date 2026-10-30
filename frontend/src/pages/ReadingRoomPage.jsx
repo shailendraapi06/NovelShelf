@@ -35,12 +35,12 @@ export default function ReadingRoomPage() {
   // PDF Reader States
   const pdfReaderRef = useRef(null);
   const [pdfCurrentPage, setPdfCurrentPage] = useState(1);
-  const [pdfTotalPages, setPdfTotalPages] = useState(book.pages || 288);
+  const [pdfTotalPages, setPdfTotalPages] = useState(book.pages || 184);
   const [pdfChapters, setPdfChapters] = useState([
-    { title: 'शीर्षक व समर्पण (Title & Prelude)', page: 1 },
-    { title: 'भाग १ : परिचयात्मक प्रवाह (Part I)', page: 3 },
-    { title: 'भाग २ : द्वंद्व और विरह (Part II)', page: 63 },
-    { title: 'भाग ३ : उत्सर्ग और चरम (Part III)', page: 126 }
+    { title: 'Title & Archival Prelude', page: 1 },
+    { title: 'Part I: The Flow Begins', page: 3 },
+    { title: 'Part II: Conflict & Longing', page: 63 },
+    { title: 'Part III: The Sublime Climax', page: 126 }
   ]);
 
   const hasPdf = Boolean(book.pdfUrl || (book.pdfFile && (book.pdfFile.filePath || book.pdfFile.filename)));
@@ -601,11 +601,11 @@ export default function ReadingRoomPage() {
           <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
             <div className="flex items-center gap-2">
               <span className="font-label-md text-xs sm:text-label-md text-primary font-bold">
-                {hasPdf ? `पृष्ठ ${pdfCurrentPage} of ${pdfTotalPages}` : spread.chapterTitle.split(':')[0]}
+                {hasPdf ? `Page ${pdfCurrentPage} of ${pdfTotalPages}` : spread.chapterTitle.split(':')[0]}
               </span>
               <span className="text-xs text-outline">•</span>
               <span className="font-body-sm text-xs sm:text-body-sm text-on-surface-variant">
-                {hasPdf ? `Reading Manuscript Folio` : `Pages ${spread.leftPage}–${spread.rightPage} of ${book.pages}`}
+                {hasPdf ? `Canonical Archival Folio` : `Pages ${spread.leftPage}–${spread.rightPage} of ${book.pages}`}
               </span>
             </div>
             <div className="flex items-center gap-2">
