@@ -1,5 +1,58 @@
 [
   {
+    "_id": "bk_gunaho_ka_devta_1793342431589",
+    "id": "gunaho-ka-devta",
+    "slug": "gunaho-ka-devta",
+    "title": "गुनाहों का देवता (Gunaho Ka Devta)",
+    "subtitle": "A Timeless Classic of Unconditional Love & Sacrifice",
+    "author": "धर्मवीर भारती (Dharamvir Bharati)",
+    "translator": null,
+    "category": "Classic Literature",
+    "genre": "Classic Hindi Literature • Tragedy • Romance",
+    "era": "20th Century (1949)",
+    "year": 1949,
+    "pages": 288,
+    "rating": 4.95,
+    "reviewsCount": 3820,
+    "readingLogs": 15420,
+    "coverImage": "/gunaho_ka_devta_cover.jpg",
+    "spineGradient": "from-[#541212] via-[#8B0000] to-[#2B0000]",
+    "spineText": "गुनाहों का देवता • भारती",
+    "tags": [
+      "Hindi Masterpiece",
+      "Chander & Sudha",
+      "Allahabad Setting",
+      "Tragic Romance",
+      "Canonical Literature",
+      "Verified Digital Folio"
+    ],
+    "synopsis": "गुनाहों का देवता भारतीय हिंदी साहित्य का सर्वाधिक लोकप्रिय और कालजयी उपन्यास है। यह चंदर और सुधा के अव्यक्त, निष्पाप और भावुक प्रेम की ऐसी अमर गाथा है जो पाठक के हृदय को झकझोर कर रख देती है।",
+    "synopsisExtended": "इलाहाबाद (प्रयागराज) की पृष्ठभूमि में रचित यह उपन्यास आदर्शवाद, नैतिकता, समाज की रूढ़ियों और मानवीय संवेदनाओं का अनुपम द्वंद्व प्रस्तुत करता है। चंदर का त्याग, सुधा की अटूट निष्ठा और विनती की विवशता मिलकर इसे हिंदी कथा-साहित्य का सबसे मार्मिक उपन्यास बनाते हैं।",
+    "quote": "प्रेम कोई पाने की चीज़ नहीं, प्रेम तो स्वयं को विसर्जित कर देने का नाम है।",
+    "quoteAuthor": "धर्मवीर भारती",
+    "format": [
+      "digital",
+      "pdf"
+    ],
+    "provenanceTag": "Bharatiya Sahitya Canonical Archive #1949-PRG",
+    "language": "Hindi (हिंदी)",
+    "isFeatured": true,
+    "isStaffPick": true,
+    "badge": "Canonical Masterpiece",
+    "pdfFile": {
+      "originalName": "gunaho_ka _devta.pdf",
+      "filename": "gunaho_ka_devta.pdf",
+      "filePath": "C:\\Users\\dell\\Desktop\\dgtl_library\\backend\\uploads\\books\\gunaho_ka_devta.pdf",
+      "fileSize": 2192971,
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-10-30T06:40:31.589Z"
+    },
+    "pdfUrl": "/gunaho_ka_devta.pdf",
+    "status": "published",
+    "createdAt": "2026-10-30T06:40:31.590Z",
+    "updatedAt": "2026-10-30T06:40:31.590Z"
+  },
+  {
     "_id": "bk_ab0bdfa2-849",
     "id": "labyrinths-of-time-99",
     "title": "Labyrinths of Time",

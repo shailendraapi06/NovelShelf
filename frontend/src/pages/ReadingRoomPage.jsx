@@ -16,10 +16,12 @@ export default function ReadingRoomPage() {
     toggleBookmark, 
     showToast, 
     readerSettings, 
-    updateReaderSettings 
+    updateReaderSettings,
+    books
   } = useLibrary();
 
-  const book = BOOKS.find(b => b.id === bookId) || BOOKS[0];
+  const libraryBooks = books && books.length > 0 ? books : BOOKS;
+  const book = libraryBooks.find(b => b.id === bookId || b.slug === bookId) || libraryBooks[0];
   const bookmarked = isBookmarked(book.id);
 
   const [currentSpreadIndex, setCurrentSpreadIndex] = useState(0);
@@ -27,6 +29,10 @@ export default function ReadingRoomPage() {
   const [isDogEared, setIsDogEared] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [viewMode, setViewMode] = useState('pdf'); // 'pdf' if pdf exists, else 'spread'
+
+  const hasPdf = Boolean(book.pdfUrl || (book.pdfFile && (book.pdfFile.filePath || book.pdfFile.filename)));
+  const pdfSource = book.pdfUrl || (book.pdfFile ? `/api/v1/books/${book.id}/content` : null);
 
   // Require authentication to read: Redirect guest to login
   useEffect(() => {
@@ -320,6 +326,38 @@ export default function ReadingRoomPage() {
               </span>
             </button>
 
+            {/* View Mode Toggle (when authentic PDF document is attached) */}
+            {hasPdf && (
+              <div className="flex items-center gap-1 bg-surface-container rounded-lg p-0.5 border border-surface-variant/40">
+                <button
+                  type="button"
+                  onClick={() => setViewMode('pdf')}
+                  className={`px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 transition-all ${
+                    viewMode === 'pdf'
+                      ? 'bg-primary text-on-primary shadow-xs'
+                      : 'text-on-surface-variant hover:text-primary'
+                  }`}
+                  title="Read Original PDF Manuscript"
+                >
+                  <span className="material-symbols-outlined text-sm">picture_as_pdf</span>
+                  <span className="hidden md:inline">Full PDF Edition</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setViewMode('spread')}
+                  className={`px-2.5 py-1 rounded text-xs font-semibold flex items-center gap-1 transition-all ${
+                    viewMode === 'spread'
+                      ? 'bg-primary text-on-primary shadow-xs'
+                      : 'text-on-surface-variant hover:text-primary'
+                  }`}
+                  title="Read in Curated Book Spreads"
+                >
+                  <span className="material-symbols-outlined text-sm">auto_stories</span>
+                  <span className="hidden md:inline">Book Spread</span>
+                </button>
+              </div>
+            )}
+
             {/* Reading Appearance Trigger */}
             <button 
               type="button"
@@ -351,37 +389,73 @@ export default function ReadingRoomPage() {
       {/* Main Sanctuary Reading Room Viewport */}
       <div className="w-full py-4 sm:py-8 md:py-12 px-3 sm:px-6 lg:px-12 flex flex-col items-center justify-center flex-1">
         
-        {/* Mobile Page Switcher Pill (< 768px) */}
-        <div className="md:hidden flex items-center justify-center gap-2 mb-3 bg-surface-container/80 rounded-full p-1 shadow-xs border border-surface-variant/40">
-          <button 
-            type="button"
-            onClick={() => setMobilePageSide('left')}
-            className={`px-3 py-1 rounded-full font-label-md text-xs transition-all ${
-              mobilePageSide === 'left' 
-                ? 'bg-primary text-on-primary font-bold shadow-xs' 
-                : 'text-on-surface-variant hover:text-primary'
-            }`}
-          >
-            Page {spread.leftPage}
-          </button>
-          <button 
-            type="button"
-            onClick={() => setMobilePageSide('right')}
-            className={`px-3 py-1 rounded-full font-label-md text-xs transition-all ${
-              mobilePageSide === 'right' 
-                ? 'bg-primary text-on-primary font-bold shadow-xs' 
-                : 'text-on-surface-variant hover:text-primary'
-            }`}
-          >
-            Page {spread.rightPage}
-          </button>
-        </div>
+        {/* Mobile Page Switcher Pill (< 768px) - Only for Spreads */}
+        {(!hasPdf || viewMode === 'spread') && (
+          <div className="md:hidden flex items-center justify-center gap-2 mb-3 bg-surface-container/80 rounded-full p-1 shadow-xs border border-surface-variant/40">
+            <button 
+              type="button"
+              onClick={() => setMobilePageSide('left')}
+              className={`px-3 py-1 rounded-full font-label-md text-xs transition-all ${
+                mobilePageSide === 'left' 
+                  ? 'bg-primary text-on-primary font-bold shadow-xs' 
+                  : 'text-on-surface-variant hover:text-primary'
+              }`}
+            >
+              Page {spread.leftPage}
+            </button>
+            <button 
+              type="button"
+              onClick={() => setMobilePageSide('right')}
+              className={`px-3 py-1 rounded-full font-label-md text-xs transition-all ${
+                mobilePageSide === 'right' 
+                  ? 'bg-primary text-on-primary font-bold shadow-xs' 
+                  : 'text-on-surface-variant hover:text-primary'
+              }`}
+            >
+              Page {spread.rightPage}
+            </button>
+          </div>
+        )}
 
-        {/* The Open Book Stage with Dynamic Width Binding */}
-        <div 
-          style={{ maxWidth: getSpreadMaxWidth() }}
-          className="relative w-full mx-auto flex items-center justify-center transition-all duration-300"
-        >
+        {/* Authentic Embedded PDF Document Reader View */}
+        {hasPdf && viewMode === 'pdf' ? (
+          <div 
+            style={{ maxWidth: getSpreadMaxWidth() }}
+            className="w-full mx-auto flex flex-col rounded-2xl shadow-2xl bg-surface-container-lowest border border-surface-variant overflow-hidden"
+          >
+            <div className="px-4 py-2.5 bg-surface-container-high/60 border-b border-surface-variant flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-rose-600 text-lg">picture_as_pdf</span>
+                <span className="font-semibold text-xs text-primary truncate max-w-xs">{book.title}</span>
+                <span className="text-[10px] font-label-archival text-outline uppercase tracking-wider hidden sm:inline">
+                  • Verified Archival PDF
+                </span>
+              </div>
+              <div className="flex items-center gap-2">
+                <a
+                  href={pdfSource}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2.5 py-1 text-[11px] font-semibold text-secondary hover:underline flex items-center gap-1"
+                >
+                  <span>Open in Full Tab</span>
+                  <span className="material-symbols-outlined text-xs">open_in_new</span>
+                </a>
+              </div>
+            </div>
+
+            <iframe 
+              src={`${pdfSource}#toolbar=1&navpanes=1&scrollbar=1&view=FitH`}
+              title={book.title}
+              className="w-full h-[75vh] min-h-[580px] border-0 bg-neutral-900"
+            />
+          </div>
+        ) : (
+          /* The Open Book Stage with Dynamic Width Binding */
+          <div 
+            style={{ maxWidth: getSpreadMaxWidth() }}
+            className="relative w-full mx-auto flex items-center justify-center transition-all duration-300"
+          >
           
           {/* Left Page Flip Hotzone & Floating Button (Desktop) */}
           <button 
@@ -541,6 +615,7 @@ export default function ReadingRoomPage() {
             </span>
           </button>
         </div>
+        )}
 
         {/* Reading Progress Track Section */}
         <div 
